@@ -7,10 +7,13 @@ $(document).ready(function() {
     
     }
     $.ajax({
-        url: "/items"
-    }).done(function(html) {
-        return $("table").append(html);
+        url: "/items.json"
+    }).done(function(html) { 
+        // for loop html for each one append to td element for highest bid
+
+        console.log(JSON.stringify(html)); 
     });
+    
 });
     
     
